@@ -1,6 +1,4 @@
 # sanhua-3d-calico-pet
-基于小开门的codex桌面宠物。
-# sanhua-3d-calico-pet
 
 A non-commercial, source-available 3D calico cat desktop pet package for Codex / Hatch Pet.
 
@@ -70,8 +68,9 @@ sanhua-3d-calico-pet/
 │  └─ other preview / QA records
 │
 ├─ requirements.txt
+├─ LICENSE-CODE.md
+├─ LICENSE-ASSETS.md
 ├─ ASSET_LICENSE.md
-├─ LICENSE
 └─ README.md
 ```
 
@@ -231,11 +230,44 @@ The cat image, spritesheet, animation frames, and final desktop pet appearance a
 
 ---
 
-## License and usage terms
+## License
 
-This project is shared publicly for non-commercial learning, personal use, and open collaborative modification only.
+This repository uses a dual-license model.
 
-This is a non-commercial, share-alike, source-available project.
+### Code
+
+All source code, scripts, configuration files, package metadata, and documentation files are licensed under the GNU General Public License v3.0. See `LICENSE-CODE.md`.
+
+This includes, but is not limited to:
+
+- `scripts/`
+- `.py` files
+- `.ps1` files
+- `requirements.txt`
+- package metadata such as `pet.json`
+- project documentation unless otherwise stated
+
+### Visual assets
+
+All original cat images, source frames, animation frames, spritesheets, preview images, QA preview images, contact sheets, GIF previews, and recognizable derivative visual assets are licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International. See `LICENSE-ASSETS.md`.
+
+This includes, but is not limited to:
+
+- `source_frames/`
+- `spritesheet.webp`
+- cat animation frames
+- preview images
+- contact sheets
+- GIF previews
+- the final recognizable calico cat desktop pet appearance
+
+Commercial use of the visual assets is prohibited without explicit written permission from the copyright owner.
+
+Any public derivative visual work must be non-commercial, must provide attribution, and must be shared under the same CC BY-NC-SA 4.0 terms.
+
+---
+
+## Permitted use
 
 You may:
 
@@ -243,7 +275,7 @@ You may:
 - study the code, scripts, animation structure, and packaging workflow;
 - modify the project for personal or educational use;
 - submit issues or pull requests to improve this repository;
-- create derivative versions only if they follow the same non-commercial and share-alike rules.
+- create derivative versions only if they follow the same non-commercial and share-alike rules for visual assets.
 
 You may not:
 
@@ -253,18 +285,18 @@ You may not:
 - repackage this project and distribute it as your own original work;
 - remove copyright notices or attribution;
 - claim ownership of the original cat image or derived visual identity;
-- distribute a modified version without making the modified source files publicly available under the same non-commercial share-alike terms.
+- distribute a modified visual version without making the modified visual source files publicly available under the same non-commercial share-alike terms.
 
 ---
 
 ## Derivative works
 
-Derivative works are allowed only under all of the following conditions:
+Derivative visual works are allowed only under all of the following conditions:
 
 1. The derivative work must be non-commercial.
 2. The derivative work must clearly credit this repository.
-3. The derivative work must keep the same non-commercial share-alike terms.
-4. The complete modified source files must be made publicly available.
+3. The derivative work must keep the same CC BY-NC-SA 4.0 terms for visual assets.
+4. The complete modified visual source files must be made publicly available.
 5. The original cat image and visual identity must not be claimed as the derivative author's original creation.
 6. Any modified pet package must clearly state that it is derived from this project.
 7. Any public redistribution must include a link back to this repository.
@@ -280,7 +312,7 @@ https://github.com/forlabSUDA/sanhua-3d-calico-pet
 
 ## Commercial use
 
-Commercial use is prohibited without explicit written permission from the copyright owner.
+Commercial use of the visual assets is prohibited without explicit written permission from the copyright owner.
 
 Commercial use includes, but is not limited to:
 
