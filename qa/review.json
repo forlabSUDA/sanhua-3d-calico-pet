@@ -1,0 +1,122 @@
+{
+  "ready_for_user_review": true,
+  "installed": false,
+  "output_dir": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all",
+  "visual_identity": "frozen from selected 3D calico cat; no redesign",
+  "codex_contract": "1536x1872, 8 columns x 9 rows, 192x208 cells",
+  "movement": "desktop/window movement intentionally deferred",
+  "optical_flow": {
+    "used": false,
+    "reason": "previous optical-flow master produced morphing and soft legs; this version uses key poses and 2.5D rig for running rows"
+  },
+  "normalization": {
+    "per_frame_autoscale": false,
+    "per_frame_bbox_fit": false,
+    "per_frame_recenter": false,
+    "row_level_scale": true,
+    "row_level_baseline": true,
+    "row_level_anchor": true,
+    "global_visual_scale_harmonization": true
+  },
+  "scale_audit": {
+    "before": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\scale_audit_before.csv",
+    "adjustment_plan": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\scale_adjustment_plan.csv",
+    "after": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\scale_audit_after.csv",
+    "summary": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\scale_comparison_summary.md"
+  },
+  "states": {
+    "idle": {
+      "pipeline": "clean key poses -> hold/ease master -> codex sampling",
+      "repaired": false,
+      "failures_before_repair": [],
+      "remaining_visual_problems": [],
+      "master_preview": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\previews\\idle-master.gif",
+      "codex_preview": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\previews\\idle-codex.gif",
+      "motion_diff": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\motion_diff\\idle-codex-diff.gif"
+    },
+    "running-right": {
+      "pipeline": "clean key poses -> 2.5D body/leg/tail rig -> 32-frame master -> codex sampling",
+      "repaired": true,
+      "failures_before_repair": [
+        "source running row judged morph-like; switched to 2.5D puppet/rig"
+      ],
+      "remaining_visual_problems": [],
+      "master_preview": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\previews\\running-right-master.gif",
+      "codex_preview": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\previews\\running-right-codex.gif",
+      "motion_diff": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\motion_diff\\running-right-codex-diff.gif"
+    },
+    "running-left": {
+      "pipeline": "mirrored 2.5D repaired running-right rig",
+      "repaired": true,
+      "failures_before_repair": [
+        "source running-left regenerated from repaired running-right rig for consistency"
+      ],
+      "remaining_visual_problems": [],
+      "master_preview": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\previews\\running-left-master.gif",
+      "codex_preview": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\previews\\running-left-codex.gif",
+      "motion_diff": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\motion_diff\\running-left-codex-diff.gif"
+    },
+    "waving": {
+      "pipeline": "clean key poses -> hold/ease master -> codex sampling",
+      "repaired": false,
+      "failures_before_repair": [],
+      "remaining_visual_problems": [],
+      "master_preview": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\previews\\waving-master.gif",
+      "codex_preview": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\previews\\waving-codex.gif",
+      "motion_diff": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\motion_diff\\waving-codex-diff.gif"
+    },
+    "jumping": {
+      "pipeline": "clean proportional jump key poses -> 24-frame master -> 5-frame Codex row",
+      "repaired": true,
+      "failures_before_repair": [
+        "jumping rebuilt as proportional crouch -> takeoff -> peak -> fall -> land"
+      ],
+      "remaining_visual_problems": [],
+      "master_preview": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\previews\\jumping-master.gif",
+      "codex_preview": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\previews\\jumping-codex.gif",
+      "motion_diff": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\motion_diff\\jumping-codex-diff.gif"
+    },
+    "failed": {
+      "pipeline": "full-body sad sit -> sink -> readable side-roll key poses -> 24-frame master -> 8-frame Codex row",
+      "repaired": true,
+      "failures_before_repair": [
+        "failed rebuilt to remove flat half-body side strips"
+      ],
+      "remaining_visual_problems": [],
+      "master_preview": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\previews\\failed-master.gif",
+      "codex_preview": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\previews\\failed-codex.gif",
+      "motion_diff": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\motion_diff\\failed-codex-diff.gif"
+    },
+    "waiting": {
+      "pipeline": "clean stretch key poses -> 24-frame master -> 6-frame Codex sampling",
+      "repaired": true,
+      "failures_before_repair": [
+        "waiting previously mixed stretch and yawn in 6 frames; simplified to one stretch loop"
+      ],
+      "remaining_visual_problems": [],
+      "master_preview": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\previews\\waiting-master.gif",
+      "codex_preview": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\previews\\waiting-codex.gif",
+      "motion_diff": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\motion_diff\\waiting-codex-diff.gif"
+    },
+    "running": {
+      "pipeline": "clean key poses -> hold/ease master -> codex sampling",
+      "repaired": false,
+      "failures_before_repair": [],
+      "remaining_visual_problems": [],
+      "master_preview": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\previews\\running-master.gif",
+      "codex_preview": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\previews\\running-codex.gif",
+      "motion_diff": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\motion_diff\\running-codex-diff.gif"
+    },
+    "review": {
+      "pipeline": "clean seated observation key poses -> 16-frame master -> 6-frame Codex sampling",
+      "repaired": true,
+      "failures_before_repair": [
+        "review previously mixed seated and lying poses; simplified to seated observation"
+      ],
+      "remaining_visual_problems": [],
+      "master_preview": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\previews\\review-master.gif",
+      "codex_preview": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\previews\\review-codex.gif",
+      "motion_diff": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\motion_diff\\review-codex-diff.gif"
+    }
+  }
+}

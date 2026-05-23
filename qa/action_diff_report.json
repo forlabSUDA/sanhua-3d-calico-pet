@@ -1,0 +1,236 @@
+{
+  "idle": {
+    "codex_diff_gif": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\motion_diff\\idle-codex-diff.gif",
+    "semantic_goal": "breathing, tiny blink, ear and tail micro-motion",
+    "pipeline": "clean key poses -> hold/ease master -> codex sampling",
+    "running_phase_report": null
+  },
+  "running-right": {
+    "codex_diff_gif": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\motion_diff\\running-right-codex-diff.gif",
+    "semantic_goal": "right-facing gait with controlled 2.5D legs and tail",
+    "pipeline": "clean key poses -> 2.5D body/leg/tail rig -> 32-frame master -> codex sampling",
+    "running_phase_report": {
+      "row": "running-right",
+      "ok": true,
+      "method": "2.5D body/leg/tail decomposition, no optical flow",
+      "leg_motion_x_px": 14.5,
+      "leg_motion_y_px": 3.0,
+      "tail_motion_y_px": 10.5,
+      "phase_centers": [
+        {
+          "leg_center": [
+            111.5,
+            177.0
+          ],
+          "tail_center": [
+            32.0,
+            162.0
+          ]
+        },
+        {
+          "leg_center": [
+            99.0,
+            178.0
+          ],
+          "tail_center": [
+            32.0,
+            156.0
+          ]
+        },
+        {
+          "leg_center": [
+            110.0,
+            177.5
+          ],
+          "tail_center": [
+            30.5,
+            161.0
+          ]
+        },
+        {
+          "leg_center": [
+            97.5,
+            177.0
+          ],
+          "tail_center": [
+            32.5,
+            151.5
+          ]
+        },
+        {
+          "leg_center": [
+            111.5,
+            177.0
+          ],
+          "tail_center": [
+            32.0,
+            158.5
+          ]
+        },
+        {
+          "leg_center": [
+            110.0,
+            175.5
+          ],
+          "tail_center": [
+            32.0,
+            156.0
+          ]
+        },
+        {
+          "leg_center": [
+            111.5,
+            175.5
+          ],
+          "tail_center": [
+            32.5,
+            158.5
+          ]
+        },
+        {
+          "leg_center": [
+            112.0,
+            178.5
+          ],
+          "tail_center": [
+            32.5,
+            161.0
+          ]
+        }
+      ],
+      "interpretation": "leg/tail centers move across phases, indicating puppet gait rather than whole-image morphing"
+    }
+  },
+  "running-left": {
+    "codex_diff_gif": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\motion_diff\\running-left-codex-diff.gif",
+    "semantic_goal": "left-facing mirrored gait with controlled 2.5D legs and tail",
+    "pipeline": "mirrored 2.5D repaired running-right rig",
+    "running_phase_report": {
+      "row": "running-left",
+      "ok": true,
+      "method": "2.5D body/leg/tail decomposition, no optical flow",
+      "leg_motion_x_px": 14.5,
+      "leg_motion_y_px": 3.0,
+      "tail_motion_y_px": 10.5,
+      "phase_centers": [
+        {
+          "leg_center": [
+            110.5,
+            177.0
+          ],
+          "tail_center": [
+            31.0,
+            162.0
+          ]
+        },
+        {
+          "leg_center": [
+            98.0,
+            178.0
+          ],
+          "tail_center": [
+            31.0,
+            156.0
+          ]
+        },
+        {
+          "leg_center": [
+            110.0,
+            177.5
+          ],
+          "tail_center": [
+            30.5,
+            161.0
+          ]
+        },
+        {
+          "leg_center": [
+            96.5,
+            177.0
+          ],
+          "tail_center": [
+            31.5,
+            151.5
+          ]
+        },
+        {
+          "leg_center": [
+            110.5,
+            177.0
+          ],
+          "tail_center": [
+            31.0,
+            158.5
+          ]
+        },
+        {
+          "leg_center": [
+            110.0,
+            175.5
+          ],
+          "tail_center": [
+            32.0,
+            156.0
+          ]
+        },
+        {
+          "leg_center": [
+            110.5,
+            175.5
+          ],
+          "tail_center": [
+            31.5,
+            158.5
+          ]
+        },
+        {
+          "leg_center": [
+            111.0,
+            178.5
+          ],
+          "tail_center": [
+            31.5,
+            161.0
+          ]
+        }
+      ],
+      "interpretation": "leg/tail centers move across phases, indicating puppet gait rather than whole-image morphing"
+    }
+  },
+  "waving": {
+    "codex_diff_gif": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\motion_diff\\waving-codex-diff.gif",
+    "semantic_goal": "small paw response",
+    "pipeline": "clean key poses -> hold/ease master -> codex sampling",
+    "running_phase_report": null
+  },
+  "jumping": {
+    "codex_diff_gif": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\motion_diff\\jumping-codex-diff.gif",
+    "semantic_goal": "crouch, takeoff, peak, fall, land",
+    "pipeline": "clean proportional jump key poses -> 24-frame master -> 5-frame Codex row",
+    "running_phase_report": null
+  },
+  "failed": {
+    "codex_diff_gif": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\motion_diff\\failed-codex-diff.gif",
+    "semantic_goal": "side-lying relaxed roll / belly-up motion",
+    "pipeline": "full-body sad sit -> sink -> readable side-roll key poses -> 24-frame master -> 8-frame Codex row",
+    "running_phase_report": null
+  },
+  "waiting": {
+    "codex_diff_gif": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\motion_diff\\waiting-codex-diff.gif",
+    "semantic_goal": "stretch plus wide-mouth yawn",
+    "pipeline": "clean stretch key poses -> 24-frame master -> 6-frame Codex sampling",
+    "running_phase_report": null
+  },
+  "running": {
+    "codex_diff_gif": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\motion_diff\\running-codex-diff.gif",
+    "semantic_goal": "focused working micro-motion, not directional travel",
+    "pipeline": "clean key poses -> hold/ease master -> codex sampling",
+    "running_phase_report": null
+  },
+  "review": {
+    "codex_diff_gif": "E:\\小红书汇总就业信息\\output\\sanhua_3d_pet_motionfix_all\\qa\\motion_diff\\review-codex-diff.gif",
+    "semantic_goal": "look, head tilt, quiet observation",
+    "pipeline": "clean seated observation key poses -> 16-frame master -> 6-frame Codex sampling",
+    "running_phase_report": null
+  }
+}

@@ -1,0 +1,10 @@
+﻿row_name,median_alpha_area_before,target_alpha_area,proposed_scale_factor,safe_scale_limit,applied_scale_factor,rule
+idle,16415.0,11200,0.826016,1.041237,0.826016,uniform row-level scale; no per-frame autoscale/bbox/recenter
+running-right,7281.5,11200,1.24022,1.016393,1.0,uniform row-level scale; no per-frame autoscale/bbox/recenter
+running-left,7281.5,11200,1.24022,1.016393,1.0,uniform row-level scale; no per-frame autoscale/bbox/recenter
+waving,13232.0,11200,0.920018,1.050847,0.920018,uniform row-level scale; no per-frame autoscale/bbox/recenter
+jumping,9874.0,11200,1.065031,1.044944,0.98,uniform row-level scale; no per-frame autoscale/bbox/recenter
+failed,10648.0,11200,1.025593,1.01087,1.01087,uniform row-level scale; no per-frame autoscale/bbox/recenter
+waiting,13407.0,11200,0.913994,1.01087,0.913994,uniform row-level scale; no per-frame autoscale/bbox/recenter
+running,20479.5,11200,0.739519,1.044944,0.74,uniform row-level scale; no per-frame autoscale/bbox/recenter
+review,13958.0,11200,0.895772,1.041237,0.895772,uniform row-level scale; no per-frame autoscale/bbox/recenter

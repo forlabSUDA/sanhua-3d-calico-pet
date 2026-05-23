@@ -1,0 +1,141 @@
+{
+  "id": "sanhua-3d-calico-motionfix",
+  "displayName": "三花猫猫 3D 修复版",
+  "description": "A repaired realistic 3D calico cat desktop pet with stabilized motion and full-body failed/jumping frames.",
+  "spritesheetPath": "spritesheet.webp",
+  "frameSize": {
+    "width": 192,
+    "height": 208
+  },
+  "grid": {
+    "columns": 8,
+    "rows": 9
+  },
+  "states": [
+    {
+      "name": "idle",
+      "row": 0,
+      "frames": 6,
+      "durationsMs": [
+        280,
+        110,
+        110,
+        140,
+        140,
+        360
+      ]
+    },
+    {
+      "name": "running-right",
+      "row": 1,
+      "frames": 8,
+      "durationsMs": [
+        92,
+        98,
+        92,
+        98,
+        92,
+        98,
+        92,
+        160
+      ]
+    },
+    {
+      "name": "running-left",
+      "row": 2,
+      "frames": 8,
+      "durationsMs": [
+        92,
+        98,
+        92,
+        98,
+        92,
+        98,
+        92,
+        160
+      ]
+    },
+    {
+      "name": "waving",
+      "row": 3,
+      "frames": 4,
+      "durationsMs": [
+        130,
+        120,
+        140,
+        320
+      ]
+    },
+    {
+      "name": "jumping",
+      "row": 4,
+      "frames": 5,
+      "durationsMs": [
+        140,
+        110,
+        130,
+        150,
+        310
+      ]
+    },
+    {
+      "name": "failed",
+      "row": 5,
+      "frames": 8,
+      "durationsMs": [
+        120,
+        140,
+        170,
+        150,
+        180,
+        140,
+        140,
+        320
+      ]
+    },
+    {
+      "name": "waiting",
+      "row": 6,
+      "frames": 6,
+      "durationsMs": [
+        210,
+        150,
+        230,
+        130,
+        330,
+        360
+      ]
+    },
+    {
+      "name": "running",
+      "row": 7,
+      "frames": 6,
+      "durationsMs": [
+        150,
+        120,
+        130,
+        120,
+        150,
+        320
+      ]
+    },
+    {
+      "name": "review",
+      "row": 8,
+      "frames": 6,
+      "durationsMs": [
+        170,
+        150,
+        160,
+        150,
+        180,
+        340
+      ]
+    }
+  ],
+  "notes": {
+    "notInstalled": true,
+    "clickRuntimeSupport": "not confirmed; no unsupported click fields added",
+    "animationPipeline": "clean key poses -> master preview -> Codex sampling -> row-level normalization"
+  }
+}
