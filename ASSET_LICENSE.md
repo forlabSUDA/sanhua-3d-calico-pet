@@ -1,18 +1,5 @@
-# 素材使用说明
+# Asset License
 
-本仓库包含三花猫桌面宠物的派生素材、帧图和最终 spritesheet。
+Please see `LICENSE-ASSETS.md` for the visual asset license.
 
-允许：
-
-- 下载到本地作为 Codex 桌面宠物使用；
-- 在本仓库基础上提交协作修改；
-- 用于学习 Codex pet 的打包、QA、动画修复流程；
-- 在保留来源说明的情况下进行非商业展示。
-
-不建议：
-
-- 把这只猫的形象当作自己的原创宠物或商业品牌资产；
-- 未经说明直接把素材二次打包出售；
-- 将素材用于与本项目无关的商业用途。
-
-代码部分可自由学习和修改；宠物视觉素材请尊重原始猫咪形象来源。
+This file is kept only as a compatibility pointer for users who may look for an asset-specific license file under the older name.
